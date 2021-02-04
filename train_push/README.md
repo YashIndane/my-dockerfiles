@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/python-3.6-yellow)
+![](https://img.shields.io/badge/python-3.6-yellow) ![](https://img.shields.io/badge/docker-18.06.3--ce-blue)
 
 A image that will train a classifer and push the model on GitHub repo
 
