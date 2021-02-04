@@ -10,12 +10,22 @@ Have a GitHub repo initialized with any name, where the model will be pushed
 
 It uses environment variables, export them by -
 
-`export variable-name`
+```
+export variable-name
+```
+
+To pull the image -
+
+```
+docker pull yashindane/random-forest-trainer:tagname
+```
 
 To run the container-
 
-`docker run -it -e RANDOM_STATE=value -e TEST_SIZE=value -e TREES=value -e CRITERIA=value -e GIT_USRN=value
--e GIT_REPON=value --name container-name yashindane/random-forest-trainer:tagname`
+```
+docker run -it -e RANDOM_STATE=value -e TEST_SIZE=value -e TREES=value -e CRITERIA=value -e GIT_USRN=value
+-e GIT_REPON=value --name container-name yashindane/random-forest-trainer:tagname
+```
 
 | env variable | description |
 | ------------ | ----------- |
@@ -30,7 +40,9 @@ Once the container starts, it is required to upload your dataset (should be name
 
 For uploading dataset -
 
-`docker cp <path-for-train.csv> :/ml_folder`
+```
+docker cp <path-for-train.csv> :/ml_folder
+```
 
 Enter your credentials when prompted.
 
