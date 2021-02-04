@@ -4,11 +4,13 @@ A image that will train a classifer and push the model on GitHub repo
 
 This is based on centos:latest image. This image will make a random forest classifier model, using sci-kit learn module and push it to the repository specfied.
 
+Click here to see Docker Hub repo 🐳 --> [Link](https://hub.docker.com/repository/docker/yashindane/random-forest-trainer/general)
+
 Have a GitHub repo initialized with any name, where the model will be pushed
 
 It uses environment variables, export them by -
 
-export variable-name
+`export variable-name`
 
 To run the container-
 
