@@ -41,7 +41,7 @@ Once the container starts, it is required to upload your dataset (should be name
 For uploading dataset -
 
 ```
-docker cp <path-for-train.csv> :/ml_folder
+docker cp <path-for-train.csv> <name-of-container>:/ml_folder
 ```
 
 Enter your credentials when prompted.
