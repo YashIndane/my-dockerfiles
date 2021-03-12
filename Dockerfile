@@ -12,4 +12,4 @@ RUN yum install python3-devel -y
 
 RUN pip3 install --upgrade pip
 
-RUN pip3 install tensorflow==2.4.1
+RUN pip3 install --no-cache-dir tensorflow==2.4.1
