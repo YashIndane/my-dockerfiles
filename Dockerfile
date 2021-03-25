@@ -17,5 +17,3 @@ RUN echo "export MAVEN_HOME=/mavenhome" >> /root/.bashrc
 RUN echo "export PATH=/mavenhome/apache-maven-3.6.3/bin/:$PATH" >> /root/.bashrc
 
 RUN echo "export JAVA_HOME=/" >> /root/.bashrc
-
- 
