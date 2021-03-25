@@ -1,15 +1,21 @@
 FROM centos:latest
 
-RUN yum install python3 -y
+COPY jdk-8u171-linux-x64.rpm /
 
-RUN pip3 install flask
+RUN rpm -i /jdk-8u171-linux-x64.rpm
 
-RUN pip3 install keras
+COPY apache-maven-3.6.3-bin.tar.gz /
 
-RUN yum install gcc-c++ -y
+RUN tar -xvzf /apache-maven-3.6.3-bin.tar.gz
 
-RUN yum install python3-devel -y
+RUN mkdir /mavenhome 
 
-RUN pip3 install --upgrade pip
+RUN mv /apache-maven-3.6.3 /mavenhome
 
-RUN pip3 install --no-cache-dir tensorflow==2.4.1
+RUN echo "export MAVEN_HOME=/mavenhome" >> /root/.bashrc
+
+RUN echo "export PATH=/mavenhome/apache-maven-3.6.3/bin/:$PATH" >> /root/.bashrc
+
+RUN echo "export JAVA_HOME=/" >> /root/.bashrc
+
+ 
